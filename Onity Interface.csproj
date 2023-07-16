@@ -1,0 +1,137 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{EA89BCE9-1BBE-4B64-8533-B301B96A2A4D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Onity_Interface</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\HEAD" />
+    <None Include=".git\objects\pack\pack-35c869158972fe8279358eb6bd29739144e346b6.idx" />
+    <None Include=".git\objects\pack\pack-35c869158972fe8279358eb6bd29739144e346b6.pack" />
+    <None Include=".git\packed-refs" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\HEAD" />
+    <None Include=".vs\Onity\v16\.suo" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="README.md" />
+    <None Include="src\bin\Debug\netstandard2.0\Onity.HT24.deps.json" />
+    <None Include="src\obj\Debug\netstandard2.0\Onity.HT24.AssemblyInfoInputs.cache" />
+    <None Include="src\obj\Debug\netstandard2.0\Onity.HT24.assets.cache" />
+    <None Include="src\obj\Debug\netstandard2.0\Onity.HT24.csproj.AssemblyReference.cache" />
+    <None Include="src\obj\Debug\netstandard2.0\Onity.HT24.csproj.CoreCompileInputs.cache" />
+    <None Include="src\obj\Debug\netstandard2.0\Onity.HT24.csproj.GenerateResource.cache" />
+    <None Include="src\obj\Onity.HT24.csproj.nuget.dgspec.json" />
+    <None Include="src\obj\Onity.HT24.csproj.nuget.g.props" />
+    <None Include="src\obj\Onity.HT24.csproj.nuget.g.targets" />
+    <None Include="src\obj\project.assets.json" />
+    <None Include="src\obj\project.nuget.cache" />
+    <None Include="src\obj\Release\netstandard2.0\Onity.HT24.AssemblyInfoInputs.cache" />
+    <None Include="src\Onity.HT24.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\bin\Debug\netstandard2.0\Onity.HT24.dll" />
+    <Content Include="src\bin\Debug\netstandard2.0\Onity.HT24.pdb" />
+    <Content Include="src\bin\Debug\netstandard2.0\pt-BR\Onity.HT24.resources.dll" />
+    <Content Include="src\obj\Debug\netstandard2.0\Onity.HT24.csproj.FileListAbsolute.txt" />
+    <Content Include="src\obj\Debug\netstandard2.0\Onity.HT24.dll" />
+    <Content Include="src\obj\Debug\netstandard2.0\Onity.HT24.pdb" />
+    <Content Include="src\obj\Debug\netstandard2.0\pt-BR\Onity.HT24.resources.dll" />
+    <Content Include="UNLICENSE.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\BusyDeviceException.cs" />
+    <Compile Include="src\CardType.cs" />
+    <Compile Include="src\CheckoutData.cs" />
+    <Compile Include="src\ChecksumException.cs" />
+    <Compile Include="src\Client.cs" />
+    <Compile Include="src\Command.cs" />
+    <Compile Include="src\CommandException.cs" />
+    <Compile Include="src\CommandType.cs" />
+    <Compile Include="src\EjectData.cs" />
+    <Compile Include="src\EjectionType.cs" />
+    <Compile Include="src\ErrorCode.cs" />
+    <Compile Include="src\obj\Debug\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs" />
+    <Compile Include="src\obj\Debug\netstandard2.0\Onity.HT24.AssemblyInfo.cs" />
+    <Compile Include="src\obj\Release\netstandard2.0\.NETStandard,Version=v2.0.AssemblyAttributes.cs" />
+    <Compile Include="src\obj\Release\netstandard2.0\Onity.HT24.AssemblyInfo.cs" />
+    <Compile Include="src\Properties\Messages.Designer.cs" />
+    <Compile Include="src\ProtocolException.cs" />
+    <Compile Include="src\ReadCode.cs" />
+    <Compile Include="src\ReadData.cs" />
+    <Compile Include="src\ReadResult.cs" />
+    <Compile Include="src\WriteData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="src\obj\Debug\netstandard2.0\Onity.HT24.Properties.Messages.pt-BR.resources" />
+    <EmbeddedResource Include="src\obj\Debug\netstandard2.0\Onity.HT24.Properties.Messages.resources" />
+    <EmbeddedResource Include="src\Properties\Messages.pt-BR.resx" />
+    <EmbeddedResource Include="src\Properties\Messages.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include="src\bin\Release\netstandard2.0\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
